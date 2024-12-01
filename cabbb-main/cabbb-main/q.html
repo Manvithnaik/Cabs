@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Booking System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="th (1).jpg" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="registration.html" class="btn-register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Ride in Style</h1>
+      <p>Affordable, Safe, and Fast Rides</p>
+      <a href="#book" class="btn hero-btn">Book Your Ride Now</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="Sedan-Side-View-With-Reflection-Underneath_b.jpg" alt="Sedan" class="service-image">
+          <h3>Sedan</h3>
+          <p>Affordable and comfortable rides.</p>
+        </div>
+        <div class="service-card">
+          <img src="suv.jpg" alt="SUV" class="service-image">
+          <h3>SUV</h3>
+          <p>Spacious and safe for family trips.</p>
+        </div>
+        <div class="service-card">
+          <img src="th.jpg" alt="Luxury" class="service-image">
+          <h3>Luxury</h3>
+          <p>Premium experience for special occasions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="book" class="book-form">
+    <div class="container">
+      <h2>Book a Ride</h2>
+      <form class="form">
+        <input type="text" id="pickup-location" placeholder="Pickup Location" required>
+        <input type="text" id="dropoff-location" placeholder="Dropoff Location" required>
+        <input type="datetime-local" id="ride-time" required>
+        <select id="car-type" required>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="luxury">Luxury</option>
+        </select>
+        <button type="submit" class="btn">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <p>&copy; 2024 Car Booking System | All Rights Reserved</p>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M21 0H3C1.34 0 0 1.34 0 3v18c0 1.66 1.34 3 3 3h9v-7h-2.5v-3h2.5v-2.2c0-3 1.8-4.8 4.5-4.8 1.3 0 2.5.1 2.8.1v3h-2.4c-1.9 0-2.4.9-2.4 2.2v2.8h4.8l-.6 3h-4.2v7h8c1.66 0 3-1.34 3-3V3c0-1.66-1.34-3-3-3z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Section -->
+  <div class="notification"></div>
+</body>
+</html>
